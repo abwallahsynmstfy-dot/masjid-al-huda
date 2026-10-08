@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#0D47A1">
+  <meta name="description" content="الموقع الرسمي لتطبيق مسجد الهدى - متابعة حفظ القرآن الكريم وتوثيق الحلقات.">
+  <title>مسجد الهدى | التطبيق الرسمي</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+
+  <style>
+    :root { --blue:#1976D2; --dark:#0D47A1; }
+    html { scroll-behavior:smooth; }
+    body { font-family:'Tajawal',sans-serif; }
+    .blue-gradient { background:linear-gradient(135deg,#1976D2 0%,#0D47A1 100%); }
+    .phone-frame {
+      border:8px solid #242424;border-radius:36px;width:280px;height:580px;
+      margin:auto;overflow:hidden;background:#fff;
+      box-shadow:0 25px 50px -12px rgba(0,0,0,.45);position:relative;
+    }
+    .feature-card { transition:transform .3s, box-shadow .3s; }
+    .feature-card:hover { transform:translateY(-8px); box-shadow:0 25px 45px -20px rgba(13,71,161,.25); }
+    .glass { background:rgba(255,255,255,.12); backdrop-filter:blur(10px); }
+    .download-btn { transition:transform .2s, box-shadow .2s; }
+    .download-btn:hover { transform:translateY(-2px); box-shadow:0 15px 30px rgba(0,0,0,.18); }
+  </style>
+</head>
+
+<body class="bg-gray-50 text-gray-900">
+
+  <!-- Navbar -->
+  <nav class="fixed top-0 w-full z-50 bg-white/85 backdrop-blur-md shadow-sm">
+    <div class="max-w-6xl mx-auto px-5 py-4 flex justify-between items-center">
+      <a href="#" class="flex items-center gap-3">
+        <div class="w-11 h-11 blue-gradient rounded-2xl flex items-center justify-center text-white text-xl font-extrabold shadow-lg">م</div>
+        <span class="text-xl md:text-2xl font-extrabold text-blue-800">مسجد الهدى</span>
+      </a>
+      <a href="#download" class="blue-gradient text-white px-6 md:px-8 py-2.5 rounded-full font-bold shadow-lg">تحميل التطبيق</a>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="pt-32 pb-20 px-6 blue-gradient text-white overflow-hidden">
+    <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+      <div>
+        <span class="inline-block glass px-4 py-2 rounded-full text-sm font-bold mb-6">التطبيق الرسمي لمسجد الهدى</span>
+        <h1 class="text-5xl md:text-7xl font-extrabold leading-tight mb-6">
+          تطبيق مسجد الهدى
+          <span class="block text-blue-200">في ثوبه الجديد</span>
+        </h1>
+        <p class="text-xl md:text-2xl opacity-95 mb-10 leading-relaxed text-blue-50">
+          نظام رقمي متكامل لمتابعة حفظ القرآن الكريم وتوثيق الحلقات وتنظيم بيانات الطلاب والمشايخ بسهولة وأمان.
+        </p>
+
+        <div class="flex flex-wrap gap-4">
+          <a href="app-release.apk" download class="download-btn bg-white text-blue-800 px-9 py-4 rounded-2xl font-extrabold text-xl shadow-2xl">
+            ⬇️ تحميل APK مجانًا
+          </a>
+          <a href="#features" class="glass px-8 py-4 rounded-2xl font-bold text-lg border border-white/20">
+            اكتشف المميزات
+          </a>
+        </div>
+
+        <div class="mt-8 flex flex-wrap gap-3 text-blue-100 text-sm">
+          <span class="glass px-4 py-2 rounded-full">Android</span>
+          <span class="glass px-4 py-2 rounded-full">APK مباشر</span>
+          <span class="glass px-4 py-2 rounded-full">نسخة Release موقعة</span>
+        </div>
+      </div>
+
+      <div class="relative hidden md:block">
+        <div class="phone-frame">
+          <div class="w-full h-full flex flex-col items-center justify-center bg-gradient-to-b from-blue-50 to-white text-blue-900 p-8 text-center">
+            <div class="w-24 h-24 blue-gradient rounded-3xl flex items-center justify-center text-white text-5xl font-extrabold shadow-xl mb-7">م</div>
+            <h3 class="text-2xl font-extrabold mb-3">مسجد الهدى</h3>
+            <p class="text-gray-500 leading-relaxed">لوحة التطبيق الرسمية</p>
+            <div class="mt-8 w-full h-2 rounded-full bg-blue-100 overflow-hidden">
+              <div class="h-full w-3/4 blue-gradient rounded-full"></div>
+            </div>
+            <p class="text-xs text-gray-400 mt-3">يمكن استبدال هذه المعاينة بصورة من التطبيق</p>
+          </div>
+        </div>
+        <div class="absolute -z-10 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-80 h-80 bg-blue-300 rounded-full blur-3xl opacity-30"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features -->
+  <section id="features" class="py-24 px-6 max-w-6xl mx-auto">
+    <div class="text-center mb-16">
+      <span class="text-blue-700 font-bold">مميزات التطبيق</span>
+      <h2 class="text-4xl md:text-5xl font-extrabold text-gray-800 mt-3 mb-5">كل ما تحتاجه في مكان واحد</h2>
+      <div class="w-20 h-1.5 blue-gradient mx-auto rounded-full"></div>
+    </div>
+
+    <div class="grid md:grid-cols-3 gap-8">
+      <div class="feature-card bg-white p-9 rounded-[2.5rem] shadow-xl shadow-gray-200/50 border border-gray-100">
+        <div class="w-16 h-16 bg-blue-100 rounded-2xl flex items-center justify-center text-3xl mb-7">📱</div>
+        <h3 class="text-2xl font-extrabold mb-4 text-blue-900">سهولة الاستخدام</h3>
+        <p class="text-gray-500 leading-relaxed text-lg">واجهات عصرية واضحة تساعد المشايخ والمسؤولين على متابعة بيانات الطلاب والحلقات بسهولة.</p>
+      </div>
+
+      <div class="feature-card bg-white p-9 rounded-[2.5rem] shadow-xl shadow-gray-200/50 border border-gray-100">
+        <div class="w-16 h-16 bg-blue-100 rounded-2xl flex items-center justify-center text-3xl mb-7">🛡️</div>
+        <h3 class="text-2xl font-extrabold mb-4 text-blue-900">حماية وخصوصية</h3>
+        <p class="text-gray-500 leading-relaxed text-lg">تصميم يركز على حماية بيانات المستخدمين وإتاحة وسائل دخول آمنة حسب إعدادات التطبيق.</p>
+      </div>
+
+      <div class="feature-card bg-white p-9 rounded-[2.5rem] shadow-xl shadow-gray-200/50 border border-gray-100">
+        <div class="w-16 h-16 bg-blue-100 rounded-2xl flex items-center justify-center text-3xl mb-7">☁️</div>
+        <h3 class="text-2xl font-extrabold mb-4 text-blue-900">مزامنة البيانات</h3>
+        <p class="text-gray-500 leading-relaxed text-lg">إمكانية مشاركة وتحديث البيانات بين المسؤولين والمشايخ وفق النظام المستخدم في التطبيق.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Supervision -->
+  <section class="py-20 bg-blue-50 border-y border-blue-100">
+    <div class="max-w-4xl mx-auto px-6 text-center">
+      <div class="inline-block px-4 py-1.5 rounded-full bg-blue-100 text-blue-700 text-sm font-bold mb-6">هوية التطبيق</div>
+      <p class="text-sm text-gray-500 mb-4">تحت إشراف مباشر من</p>
+      <h2 class="text-4xl md:text-5xl font-extrabold text-gray-900 mb-8">فضيلة الشيخ/ حمدي الأهواني</h2>
+      <div class="flex items-center justify-center gap-5 text-gray-600">
+        <div class="h-px w-12 bg-blue-200"></div>
+        <p class="text-lg md:text-xl font-medium">تصميم وبرمجة: حُسَين بن مُصْطَفَى آل ابُوالعِلا</p>
+        <div class="h-px w-12 bg-blue-200"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Download -->
+  <section id="download" class="py-28 px-6">
+    <div class="max-w-5xl mx-auto blue-gradient rounded-[3rem] p-10 md:p-20 text-center relative overflow-hidden shadow-2xl">
+      <div class="absolute top-0 right-0 -mr-20 -mt-20 w-72 h-72 bg-white rounded-full blur-3xl opacity-10"></div>
+      <div class="absolute bottom-0 left-0 -ml-20 -mb-20 w-72 h-72 bg-blue-300 rounded-full blur-3xl opacity-10"></div>
+
+      <div class="relative">
+        <h2 class="text-4xl md:text-6xl font-extrabold text-white mb-6">ابدأ رحلتك الآن</h2>
+        <p class="text-blue-100 text-xl mb-12 max-w-2xl mx-auto">حمّل النسخة الرسمية من تطبيق مسجد الهدى على جهاز Android.</p>
+
+        <div class="flex flex-col md:flex-row items-center justify-center gap-10">
+          <div class="bg-white p-5 rounded-3xl shadow-xl">
+            <div id="qrcode" class="w-44 h-44 flex items-center justify-center"></div>
+            <p class="text-gray-900 font-bold mt-4">امسح لتحميل التطبيق</p>
+          </div>
+
+          <div class="w-full md:w-auto text-center">
+            <div class="bg-white/10 border border-white/15 rounded-3xl p-7 mb-5">
+              <p class="text-white text-2xl font-extrabold mb-2">متوفر لأجهزة Android</p>
+              <p class="text-blue-100">نسخة Release موقعة</p>
+              <p class="text-blue-200 text-sm mt-2">الحجم التقريبي: 3.3 MB</p>
+            </div>
+
+            <a href="app-release.apk" download class="download-btn bg-white text-blue-900 px-10 py-5 rounded-2xl font-extrabold text-xl shadow-xl block">
+              ⬇️ تنزيل التطبيق APK
+            </a>
+            <p class="text-blue-200 text-sm mt-4">إذا لم يبدأ التحميل، اضغط على الزر مرة أخرى.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="py-12 text-center text-gray-400 border-t bg-white">
+    <p class="font-medium">© <span id="year"></span> مسجد الهدى — جميع الحقوق محفوظة</p>
+    <p class="text-sm mt-2">التطبيق الرسمي لمسجد الهدى</p>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+
+    // QR code points directly to the APK on the same website.
+    const apkUrl = new URL("app-release.apk", window.location.href).href;
+    new QRCode(document.getElementById("qrcode"), {
+      text: apkUrl,
+      width: 176,
+      height: 176,
+      colorDark: "#0D47A1",
+      colorLight: "#ffffff",
+      correctLevel: QRCode.CorrectLevel.H
+    });
+  </script>
+</body>
+</html>
